@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./UserList.css";
 import axios from "axios";
 
 const UserList = () => {
@@ -16,7 +17,7 @@ const UserList = () => {
   }, []);
 
   return (
-    <div>
+    <div className="user-list">
       <h1>User List</h1>
       <ul>
         {listOfUsers.map((user) => (
